@@ -45,8 +45,17 @@ display: flex;
 align-items: flex-end;
 justify-content: flex-start;
 }
+.logo{
+    width: 300px;
+    height: 00px;
+    margin-left: 50px;
+    color: #fff;
+    font-weight: 700;
+    font-family: 'Prata', serif;
+    font-size: 25px;
+}
 .navbar{
-    padding-top: 40px;
+    padding-top: 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -63,7 +72,7 @@ justify-content: flex-start;
 }
 .navbar ul li{
     list-style: none;
-    font-size: 40px;
+    font-size: 20px;
 
 }
 .navbar ul li a{
@@ -73,6 +82,9 @@ justify-content: flex-start;
     font-weight: 400;
     font-style: normal;
 
+}
+.navbar ul li a:hover{
+    color: #bbd5e6;
 }
 .hero-text{
 
@@ -168,4 +180,73 @@ font-size: 150%;
 text-align: center;
 font-size: large;
 font-family: 'Courier New', Courier, monospace;
+}
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-info div {
+    margin: 15px;
+    max-width: 200px;
+}
+
+.footer-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.footer-info p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-info div {
+        text-align: center;
+    }
 }
